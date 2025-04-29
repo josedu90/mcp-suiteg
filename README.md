@@ -8,6 +8,10 @@
 
 A Model Context Protocol (MCP) server enabling AI agents to interact with Google Workspace (Drive, Docs, and Sheets) services.
 
+<a href="https://glama.ai/mcp/servers/@josedu90/mcp-suiteg">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@josedu90/mcp-suiteg/badge" alt="Google Workspace Server MCP server" />
+</a>
+
 ## 🌟 Features
 
 - Google Drive: Search files, create folders
