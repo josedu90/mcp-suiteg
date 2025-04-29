@@ -13,9 +13,14 @@ RUN apt-get update && apt-get install -y \
 RUN pip install uv
 
 # Copiar archivos requeridos
+COPY . /app
 COPY pyproject.toml ./
 COPY README.md ./
 COPY src/ ./src/
+# Copia el archivo de definición de herramientas de Smithery
+
+COPY .smithery.yaml /app/.smithery.yaml
+
 
 # Instalar dependencias usando uv en el entorno global
 RUN uv pip install --no-cache --system .
@@ -31,6 +36,10 @@ RUN chown -R mcp:mcp /app
 
 # Cambiar a usuario mcp
 USER mcp
+
+# Expone el puerto que Smithery necesita (ajústalo si usas otro)
+EXPOSE 3001
+
 
 # Definir el punto de entrada para ejecutar el módulo directamente
 CMD ["python", "-m", "mcp_google_suite"]
