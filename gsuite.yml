@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   mcp_gsuite:
-    image: mcp-google-suite:latest
+    image: josedu90/mcp-google-suite:latest
     deploy:
       replicas: 1
       restart_policy:
