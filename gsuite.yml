@@ -17,7 +17,8 @@ services:
       - ./server-creds.json:/app/server-creds.json:ro
       - ./auth.keys.json:/app/auth.keys.json:ro
       - ./logs:/app/logs
-      - ./mcp-google-suite/src:/app/src
+      - ./src:/app/src
+
 
 networks:
   316adsNet:
