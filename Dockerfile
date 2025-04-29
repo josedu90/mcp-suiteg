@@ -17,6 +17,7 @@ COPY . /app
 COPY pyproject.toml ./
 COPY README.md ./
 COPY src/ ./src/
+COPY .smithery.yaml .smithery.yaml
 # Copia el archivo de definición de herramientas de Smithery
 
 COPY .smithery.yaml /app/.smithery.yaml
