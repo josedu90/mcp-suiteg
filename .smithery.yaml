@@ -3,7 +3,7 @@ description: Conjunto de herramientas MCP para Google Workspace (Docs, Drive, Sh
 runtime: docker
 
 docker:
-  image: josedu90/mcp-google-suite:latest
+  image: josedu90/mcp-suiteg:latest
   command: python3 -m mcp_google_suite
   ports:
     - 3001
